@@ -1,0 +1,14 @@
+@import "~assets/styles/lib/_mq.sass"
+@mixin create-heading-classes($headings)
+  @each $level, $properties in $headings
+    .heading-#{$level}
+      margin-top: 0
+      margin-bottom: map-get($properties, 'line-height') * map-get($properties, 'size') / 2
+      font-family: map-get($properties, 'font')
+      font-size: map-get($properties, 'size')
+      font-weight: map-get($properties, 'weight')
+      line-height: map-get($properties, 'line-height')
+      @each $mq, $size in map-get($properties, 'sizes')
+        +mq($mq)
+          margin-bottom: map-get($properties, 'line-height') * $size / 2
+          font-size: $size
