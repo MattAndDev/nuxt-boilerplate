@@ -35,9 +35,8 @@ export default {
 </script>
 
 <style lang="sass">
-
 .icon
-  vertical-align: middle
   width: 50px
   height: 50px
+  vertical-align: middle
 </style>
