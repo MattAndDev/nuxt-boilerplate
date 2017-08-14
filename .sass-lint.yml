@@ -1,0 +1,37 @@
+# Linter Options
+options:
+  merge-default-rules: false
+  formatter: html
+  output-file: 'linters/sass-lint.html'
+files:
+  include:
+    - '**/*.s+(a|c)ss'
+    - '**/*.vue'
+# Rule Configuration
+rules:
+  extends-before-mixins: 2
+  extends-before-declarations: 2
+  mixins-before-declarations:
+    - 2
+    -
+      exclude:
+        - mq
+        - center-transform
+        - size
+        - pos
+  no-warn: 0
+  no-debug: 1
+  no-ids: 2
+  no-important: 2
+  space-after-comma:
+    - 2
+    -
+      include: true
+  hex-notation:
+    - 2
+    -
+      style: uppercase
+  property-sort-order:
+    - 1
+    -
+      order: smacss
