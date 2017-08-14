@@ -42,10 +42,10 @@ export default {
 </script>
 
 <style lang="sass">
-@import "~assets/styles/_vars.scss"
-@import "~assets/styles/lib/_mq.sass"
-@import "~assets/styles/lib/_create-heading-classes.sass"
-
-@include create-heading-classes($headings)
-
+// configuration file with scss map
+@import "~assets/styles/atoms/heading/_heading-vars.scss"
+// ixin to generate the styles
+@import "~assets/styles/atoms/heading/_heading-builder.sass"
+// ship it
+@include heading-builder($headings)
 </style>

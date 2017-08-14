@@ -1,5 +1,17 @@
+//============================================
+// Heading atom builder
+//============================================
+
+// creates classes for heading atom component
+// see:
+// - assets/styles/atoms/heading/_heading-vars.scss
+// - components/atoms/heading.vue
+
+// import media query mixin
 @import "~assets/styles/lib/_mq.sass"
-@mixin create-heading-classes($headings)
+
+// build the classes depending on the provided map
+@mixin heading-builder($headings)
   @each $level, $properties in $headings
     .heading-#{$level}
       margin-top: 0
