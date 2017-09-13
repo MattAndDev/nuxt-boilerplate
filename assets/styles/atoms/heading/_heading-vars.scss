@@ -13,11 +13,11 @@ $headings: (
   h1: (                 // h-level
     size: 20px,         // default font size
     sizes: (            // font size for breakpoints (note reference to global vars)
-      $bp-xs: 28px,
-      $bp-sm: 38px,
-      $bp-md: 48px,
-      $bp-lg: 52px,
-      $bp-xl: 58px
+      xs: 28px,
+      sm: 38px,
+      md: 48px,
+      lg: 52px,
+      xl: 58px
     ),
     font: $font,        // actual font family
     weight: 700,        // font weight
@@ -26,11 +26,11 @@ $headings: (
   h2: (
     size: 20px,
     sizes: (
-      $bp-xs: 24px,
-      $bp-sm: 26px,
-      $bp-md: 36px,
-      $bp-lg: 46px,
-      $bp-xl: 52px
+      xs: 24px,
+      sm: 26px,
+      md: 36px,
+      lg: 46px,
+      xl: 52px
     ),
     font: $font,
     weight: 700,
@@ -39,11 +39,11 @@ $headings: (
   h3: (
     size: 20px,
     sizes: (
-      $bp-xs: 20px,
-      $bp-sm: 38px,
-      $bp-md: 18px,
-      $bp-lg: 48px,
-      $bp-xl: 58px
+      xs: 20px,
+      sm: 38px,
+      md: 18px,
+      lg: 48px,
+      xl: 58px
     ),
     font: $font,
     weight: 700,

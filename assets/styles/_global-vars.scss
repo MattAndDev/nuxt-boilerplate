@@ -20,45 +20,28 @@ $color-text:  $black;
 $color-bg:    $white;
 
 
-
-// Layout
-//============================================
-
-// XS
-$layout-gutter-xs: 16px;
-$layout-width-xs:  416px;
-
-// SM
-$layout-gutter-sm: 20px;
-$layout-width-sm:  728px;
-
-// MD
-$layout-gutter-md: 22px;
-$layout-width-md:  966px;
-
-// LG
-$layout-gutter-lg: 30px;
-$layout-width-lg:  1290px;
-
-// LG
-$layout-gutter-xl: 30px;
-$layout-width-xl:  1490px;
-
-
-// Breakpoints
-//============================================
-
-$bp-xs:       "(min-width: #{$layout-width-xs + ($layout-gutter-xs * 2)})";
-$bp-sm:       "(min-width: #{$layout-width-sm + ($layout-gutter-sm * 2)})";
-$bp-md:       "(min-width: #{$layout-width-md + ($layout-gutter-md * 2)})";
-$bp-lg:       "(min-width: #{$layout-width-lg + ($layout-gutter-lg * 2)})";
-$bp-xl:       "(min-width: #{$layout-width-xl + ($layout-gutter-xl * 2)})";
-
-$bp-xs-down:  "(max-width: #{($layout-width-xs + ($layout-gutter-xs * 2)) - 1px})";
-$bp-sm-down:  "(max-width: #{($layout-width-sm + ($layout-gutter-sm * 2)) - 1px})";
-$bp-md-down:  "(max-width: #{($layout-width-md + ($layout-gutter-md * 2)) - 1px})";
-$bp-lg-down:  "(max-width: #{($layout-width-lg + ($layout-gutter-lg * 2)) - 1px})";
-$bp-xl-down:  "(max-width: #{($layout-width-xl + ($layout-gutter-xl * 2)) - 1px})";
+$breakpoints: (
+  xs: (
+    gutter: 16px,
+    width:416px
+  ),
+  sm: (
+    gutter: 20px,
+    width: 728px
+  ),
+  md: (
+    gutter: 22px,
+    width: 966px
+  ),
+  lg: (
+    gutter: 30px,
+    width: 1290px
+  ),
+  xl: (
+    gutter: 30px,
+    width: 1490px
+  )
+);
 
 
 // Dimensions
@@ -70,7 +53,6 @@ $space-quarter:   $space * 0.25;
 $space-duble:     $space * 2;
 $space-triple:    $space * 3;
 $space-quad:      $space * 4;
-
 
 // Typography
 //============================================
