@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "eventemitter3": "^2.0.3",
-    "nuxt": "^1.0.0-rc4",
+    "nuxt": "^1.0.0-rc11",
     "vue-class-component": "^5.0.2"
   },
   "devDependencies": {
