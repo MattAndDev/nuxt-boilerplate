@@ -32,7 +32,7 @@ export default {
       type: String, default: ''
     },
     fake: {
-      type: String, default: false
+      type: [String, Boolean], default: false
     },
     type: {
       type: String, required: true
@@ -43,9 +43,9 @@ export default {
 
 <style lang="sass">
 // configuration file with scss map
-@import "~assets/styles/atoms/heading/_heading-vars.scss"
+@import "./_heading-vars.scss"
 // ixin to generate the styles
-@import "~assets/styles/atoms/heading/_heading-builder.sass"
+@import "./_heading-builder.sass"
 // ship it
 @include heading-builder($headings)
 </style>
