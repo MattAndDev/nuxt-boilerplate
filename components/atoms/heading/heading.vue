@@ -13,7 +13,7 @@
    <p v-if="fake === 'p'" :class="'heading-'+type + ' ' + classes" v-html="content"></p>
    <span v-else-if="fake === 'span'" :class="'heading-'+type + ' ' + classes" v-html="content"></span>
    <h1 v-else-if="type === 'h1'" :class="'heading-h1 ' + classes" v-html="content"></h1>
-   <h2 v-else-if="type === 'h2'" :class="'heading-h2' + classes" v-html="content"></h2>
+   <h2 v-else-if="type === 'h2'" :class="'heading-h2 ' + classes" v-html="content"></h2>
    <h3 v-else-if="type === 'h3'" :class="'heading-h3 ' + classes" v-html="content"></h3>
    <h4 v-else-if="type === 'h4'" :class="'heading-h4 ' + classes" v-html="content"></h4>
    <h5 v-else-if="type === 'h5'" :class="'heading-h5 ' + classes" v-html="content"></h5>
